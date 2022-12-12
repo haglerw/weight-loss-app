@@ -1,0 +1,243 @@
+//
+// custom-variables
+//
+
+// Font Weight
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-semibolder: 900;
+
+// apex charts
+$apex-grid-color: #f8f9fa;
+
+// Custom Font
+$font-family-secondary:      'Inter', sans-serif;
+
+// Topbar
+$header-height: 70px;
+$header-bg: #ffffff;
+$header-item-color: #636e75;
+
+// Footer
+$footer-height: 80px;
+$footer-bg: #fff;
+$footer-color: #74788d;
+
+// Display
+$display-none: none;
+$display-block: block;
+
+// Color system
+
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #eff2f7;
+$gray-300: #f1f5f7;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #74788d;
+$gray-700: #505d69;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+$grays: ();
+$grays: map-merge(
+    (
+      "100": $gray-100,
+      "200": $gray-200,
+      "300": $gray-300,
+      "400": $gray-400,
+      "500": $gray-500,
+      "600": $gray-600,
+      "700": $gray-700,
+      "800": $gray-800,
+      "900": $gray-900
+    ),
+    $grays
+);
+
+$violet:   #7B66FF;
+$lavender: #D7D1FF;
+$inchworm: #C3FF4D;
+$black:    #050505;
+
+$colors: ();
+$colors: map-merge(
+      (
+        "violet":     $violet,
+        "lavender":   $lavender,
+        "inchworm":   $inchworm,
+        "black":      $black,
+        "white":      $white,
+        "gray":       $gray-600,
+        "gray-dark":  $gray-800
+      ),
+      $colors
+);
+
+$primary:   $violet;
+$secondary: $gray-600;
+$success:   $inchworm;
+$light:     $gray-200;
+$dark:      $gray-800;
+
+$theme-colors: ();
+$theme-colors: map-merge(
+    (
+      "primary":   $primary,
+      "secondary": $secondary,
+      "success":   $success,
+      "light":     $light,
+      "dark":      $dark
+    ),
+    $theme-colors
+);
+
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+
+$spacer: 1rem;
+$spacers: ();
+$spacers: map-merge(
+    (
+      0: 0,
+      1: ($spacer * .25),
+      2: ($spacer * .5),
+      3: $spacer,
+      4: ($spacer * 1.5),
+      5: ($spacer * 3)
+    ),
+    $spacers
+);
+
+// This variable affects the `.h-*` and `.w-*` classes.
+$sizes: ();
+// stylelint-disable-next-line scss/dollar-variable-default
+$sizes: map-merge(
+    (
+      25: 25%,
+      50: 50%,
+      75: 75%,
+      100: 100%,
+      auto: auto
+    ),
+    $sizes
+);
+
+// Components
+//
+// Define common padding and border radius sizes and more.
+
+$line-height-lg:              1.5;
+$line-height-sm:              1.5;
+
+$border-width:                1px;
+$border-color:                $gray-200;
+
+$border-radius:               .25rem;
+$border-radius-lg:            .4rem;
+$border-radius-sm:            .2rem;
+
+$rounded-pill:                50rem;
+
+$box-shadow-sm:               0 1px 1px rgba($black,.05);
+$box-shadow:                  0 2px 4px rgba($black,.08);
+$box-shadow-lg:               0 5px 12px rgba($black, 0.1);
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg:    $violet;
+$body-color: $black;
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$grid-columns:                12;
+$grid-gutter-width:           24px;
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$font-family-sans-serif:      'Nunito', sans-serif;
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$font-family-base:            $font-family-sans-serif;
+
+$font-size-base:              0.9rem;
+$font-size-lg:                $font-size-base * 1.25;
+$font-size-sm:                $font-size-base * .875;
+
+$font-weight-lighter:         lighter;
+$font-weight-light:           300;
+$font-weight-normal:          400;
+$font-weight-bold:            600;
+$font-weight-bolder:          bolder;
+
+$font-weight-base:            $font-weight-normal;
+$line-height-base:            1.5;
+
+$h1-font-size:                $font-size-base * 2.5;
+$h2-font-size:                $font-size-base * 2;
+$h3-font-size:                $font-size-base * 1.75;
+$h4-font-size:                $font-size-base * 1.5;
+$h5-font-size:                $font-size-base * 1.25;
+$h6-font-size:                $font-size-base;
+
+$headings-margin-bottom:      $spacer / 2;
+$headings-font-family:        null;
+$headings-font-weight:        500;
+$headings-line-height:        1.2;
+$headings-color:              null;
+
+$display1-size:               6rem;
+$display2-size:               5.5rem;
+$display3-size:               4.5rem;
+$display4-size:               3.5rem;
+
+$display1-weight:             300;
+$display2-weight:             300;
+$display3-weight:             300;
+$display4-weight:             300;
+$display-line-height:         $headings-line-height;
+
+$lead-font-size:              $font-size-base * 1.25;
+$lead-font-weight:            300;
+
+$small-font-size:             80%;
+
+$text-muted:                  $gray-600;
+
+$hr-border-color:             rgba($black, .1);
+$hr-border-width:             $border-width;
+
+$menu-color:                  #A5A5A5;
+
+// Cards
+
+$card-spacer-y:                     .75rem;
+$card-spacer-x:                     1.25rem;
+$card-border-width:                 0;
+$card-border-radius:                $border-radius;
+$card-border-color:                 $gray-300;
+$card-inner-border-radius:          subtract($card-border-radius, $card-border-width);
+$card-cap-bg:                       $gray-300;
+$card-cap-color:                    null;
+$card-color:                        null;
+$card-bg:                           $white;
+
+$card-title-desc:                   $gray-600;
+
+$card-img-overlay-padding:          1.25rem;
+
+$card-group-margin:                 $grid-gutter-width / 2;
+$card-deck-margin:                  $card-group-margin;
+
+$card-columns-count:                3;
+$card-columns-gap:                  1.25rem;
+$card-columns-margin:               $grid-gutter-width;
