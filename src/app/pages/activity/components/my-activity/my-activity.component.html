@@ -1,0 +1,15 @@
+<app-activity-header></app-activity-header>
+
+<div class="d-flex overflow-auto stat-card mb-2">
+  <div *ngFor="let stat of statData" class="col-6 me-2">
+    <app-stat [text]="stat.text" [value]="stat.value" [icon]="stat.icon" [progress]="stat.progress"></app-stat>
+  </div>
+</div>
+
+<div class="mb-3">
+  <app-goal-chart></app-goal-chart>
+</div>
+
+<div>
+  <app-workout></app-workout>
+</div>

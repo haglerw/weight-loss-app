@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "c4763761-792d-4271-866f-45f103aa0ab9"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -31,6 +34,8 @@
               "src/assets"
             ],
             "styles": [
+              "src/assets/scss/bootstrap.scss",
+              "src/assets/scss/app.scss",
               "src/styles.scss"
             ],
             "scripts": []
@@ -99,9 +104,13 @@
               "src/assets"
             ],
             "styles": [
+              "src/assets/scss/bootstrap.scss",
+              "src/assets/scss/app.scss",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/apexcharts/dist/apexcharts.min.js"
+            ]
           }
         }
       }

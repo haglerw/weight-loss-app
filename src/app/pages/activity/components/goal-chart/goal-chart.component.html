@@ -1,0 +1,16 @@
+<div class="d-flex justify-content-between mb-2">
+  <h4 class="card-title font-size-15">Goal for week</h4>
+  <h5 class="text-muted font-size-12">42 of 54</h5>
+</div>
+<div class="goal-chart">
+  <apx-chart dir="ltr" class="apex-charts"
+             [series]="goalChart.series"
+             [chart]="goalChart.chart"
+             [legend]="goalChart.legend"
+             [colors]="goalChart.colors"
+             [grid]="goalChart.grid"
+             [xaxis]="goalChart.xaxis"
+             [yaxis]="goalChart.yaxis"
+             [plotOptions]="goalChart.plotOptions" [dataLabels]="goalChart.dataLabels">
+  </apx-chart>
+</div>
